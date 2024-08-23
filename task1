@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="journey-board-container">
+        <div class="collapsed-board">
+            <div class="sidebar">
+                <span class="step-number">1</span>
+            </div>
+            <div class="main-content">
+                <h1>Technical Project Management</h1>
+                <p class="description">Explore the world of management</p>
+                <div class="sections">
+                    <div class="section">
+                        <h2>Technical Project Management</h2>
+                        <p>Description: Story of Alignment Scope of Agile Specific...</p>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz" title="YouTube video"></iframe>
+                    </div>
+                    <div class="section">
+                        <h2>ThreadBuild</h2>
+                        <p>Description: Watch the video and contribute...</p>
+                        <div class="thread-content">
+                            <h3>Thread A</h3>
+                            <textarea placeholder="Enter your thoughts..."></textarea>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h2>Structure your Pointers</h2>
+                        <p>Description: Write a 300-400 word article...</p>
+                        <input type="text" placeholder="Title">
+                        <textarea placeholder="Content"></textarea>
+                    </div>
+                    <div class="section">
+                        <h2>4SA Method</h2>
+                        <p>Description: To explore more read...</p>
+                        <textarea placeholder="Introduction"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="expanded-board">
+            <div class="sidebar">
+                <div class="journey-board">
+                    <h2>Journey Board</h2>
+                    <ul>
+                        <li>Technical Project Management</li>
+                        <li>ThreadBuild</li>
+                        <li>Structure your Pointers</li>
+                        <li>4SA Method</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <h1>Technical Project Management</h1>
+                <p class="description">Explore the world of management</p>
+                <div class="sections">
+                    <!-- Similar structure as in the collapsed view -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.journey-board-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.collapsed-board, .expanded-board {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.sidebar {
+    width: 10%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-content {
+    width: 90%;
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.thread-content {
+    margin-top: 10px;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.journey-board {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.journey-board h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.journey-board ul {
+    list-style: none;
+    padding: 0;
+}
+
+.journey-board ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
